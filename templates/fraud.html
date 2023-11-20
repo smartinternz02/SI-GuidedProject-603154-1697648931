@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i0.wp.com/www.merchantfraudjournal.com/wp-content/uploads/2023/06/shutterstock_2179482115-scaled.jpg?fit=2560%2C830&ssl=1'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #333;
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e6f7ff;
+            border-radius: 6px;
+        }
+
+        .result p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a53ff;
+        }
+
+        .result img {
+            width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Fraud Detection Result</h1>
+        </div>
+        <div class="result">
+            <h1>There is a fraud transaction</h1>
+            <h2> PLEASE CONTACT YOUR BANK FOR FOR MORE DETAILS !!</h2>
+            <p>{{prediction}}</p>
+            <img src="https://freepngimg.com/thumb/red_cross/28029-3-red-cross-file-thumb.png" alt="Fraud Image">
+            <!-- Replace the image source with an actual image -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Fraud Detection</title>
+    <link rel="stylesheet" href="static\styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn.gencraft.com/prod/user/49bfb977-1966-4ab4-baf9-77ece46064a7/8a0e2f04-ca7c-4150-88c5-2f1d7eeb5113/image/image0_0.jpg?Expires=1700582614&Signature=q3he9C72Z9iYb85d3cU63jjlDTgJ5Gr91jIpgQYOXEpSA2UzCsuTjQFFRuPDvT~fVUmrqnfx0-mSFoRe1fq~Tu-gtGw2xWbypNmKUh6epu2ajHXHxgeuKcGNzHazELAHO1Bhyh1tQXrAoWcq6ex5BGXJ0B15jFLnBHXIcFV8TD4UScZsZf59cQevJs6f7z8ZHdsbJ-DiHKspELahWxuke-OiEiXAkMJS6ZWru7gw7fB6ne2SFUOKL8lsBKyDWHv1FF2hX5e9pIBhsEqOqjYLg6Rg31O1lSlKFeCqmOiZdPhzGVx7cl48hS37wO~ABL4dGNZ42dM9ElbU-yJTNAhN6A__&Key-Pair-Id=K3RDDB1TZ8BHT8"alt="Bank Logo">
+            <h1>Bank Fraud Detection</h1>
+        </div>
+        <form action="/predict",methods="POST">
+        <form id="fraudForm">
+            <div class="input-group">
+                <label for="amount">Amount of Transaction</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="input-group">
+                <label for="oldbalanceOrg">Balance before the transaction</label>
+                <input type="text" id="oldbalanceOrg" name="oldbalanceOrg" required>
+            </div>
+            <div class="input-group">
+                <label for="newbalanceOrig">Balance after the transaction</label>
+                <input type="text" id="newbalanceOrig" name="newbalanceOrig" required>
+            </div>
+            <div class="input-group">
+                <label for="oldbalanceDest">The OLD balance of recipient after the transaction</label>
+                <input type="oldbalanceDest" id="oldbalanceDest" name="oldbalanceDest" required>
+            </div>
+            <div class="input-group">
+                <label for="newbalanceDest">The new balance of recipient after the transaction</label>
+                <input type="newbalanceDest" id="newbalanceDest" name="newbalanceDest" required>
+            </div>
+            <div class="navigation">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+            </div>
+            
+            <!-- Add more input groups here as needed -->
+            <button type="submit">Detect Fraud</button>
+        </form>
+        <div id="predictionBox"></div>
+    </div>
+</body>
+</html>
