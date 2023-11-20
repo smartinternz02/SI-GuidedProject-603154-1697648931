@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('rm373batch4-15.jpg');
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+    
+    /* Rest of your CSS styles */
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    background-color: rgba(230, 237, 236, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    height: 600px;
+    width: 100%;
+    animation: slideIn 1s ease-in-out;
+    overflow-y: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    text-align: left;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.input-group input {
+    width: calc(100% - 22px);
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#predictionBox {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-in-out;
+}
